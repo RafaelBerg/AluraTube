@@ -9,6 +9,8 @@ export const CSSReset = createGlobalStyle`
   }
   body {
     font-family: sans-serif;
+    background-color: ${({ theme }) => theme.backgroundBase};
+    color: ${({ theme }) => theme.textColorBase};
   }
   /* NextJS */
   html {
@@ -32,7 +34,7 @@ export const CSSReset = createGlobalStyle`
     transition: .3s;
     &:hover,
     &:focus {
-      opacity: .5;
+      opacity: .8;
     }
   }
 `;

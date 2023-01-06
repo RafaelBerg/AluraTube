@@ -5,6 +5,12 @@ export const StyledTimeline = styled.div`
   width: 100%;
   padding: 16px;
   overflow: hidden;
+  .video {
+    transition: transform 350ms ease-in-out;
+    &:hover{
+      transform: scale(1.15);
+    }
+  }
   h2 {
     font-size: 16px;
     margin-bottom: 16px;
@@ -24,7 +30,6 @@ export const StyledTimeline = styled.div`
     overflow: hidden;
     padding: 16px;
     div {
-      
       width: calc(100vw - 16px * 4);
       display: grid;
       grid-gap: 16px;
