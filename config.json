@@ -34,44 +34,50 @@
       "jogos": [
         {
           "title": "GOD OF WAR RAGNAROK - #1: INÍCIO EMOCIONANTE do Jogo!",
-          "url": "https://www.youtube.com/watch?v=ePBAtZddUx4&ab_channel=FunkyBlackCat",
+          "url": "https://www.youtube.com/watch?v=ePBAtZddUx4",
           "animate": "https://images2.imgbox.com/b5/d2/QpTWesPt_o.gif",            
           "thumb": "https://img.youtube.com/vi/ePBAtZddUx4/hqdefault.jpg"
         },
           {
             "title": "Black Ops 2 - Zombies com FunkyBlackCat",
-            "url": "https://www.youtube.com/watch?v=mWUUJ_QKGIE&t=6s&ab",
+            "url": "https://www.youtube.com/watch?v=mWUUJ_QKGIE",
             "animate": "https://images2.imgbox.com/87/80/Xz0HDcjV_o.gif",
             "thumb": "https://img.youtube.com/vi/mWUUJ_QKGIE/hqdefault.jpg"
             
           },
           {
             "title": "alanzoka jogando Gartic Phone com os amigos - #1",
-            "url": "https://www.youtube.com/watch?v=7QTazCQgfbQ&t=56s&ab",
+            "url": "https://www.youtube.com/watch?v=7QTazCQgfbQ",
             "animate": "https://images2.imgbox.com/96/71/JD2uBGRo_o.gif",            
             "thumb": "https://img.youtube.com/vi/7QTazCQgfbQ/hqdefault.jpg"
           },
           {
             "title": "THE LAST OF US Part II #2 - Corredores e Estaladores | Gameplay em Português PT-BR no PS4 Pro",
-            "url": "https://www.youtube.com/watch?v=8vDhnExPDns&ab",
+            "url": "https://www.youtube.com/watch?v=8vDhnExPDns",
             "animate": "https://images2.imgbox.com/c7/de/784OeBgF_o.gif",            
             "thumb": "https://img.youtube.com/vi/8vDhnExPDns/hqdefault.jpg"
           },
           {
             "title": "DUVIDO VOCÊ ACERTAR A ÚLTIMA PALAVRA! - Termo, Dueto e Quarteto",
-            "url": "https://www.youtube.com/watch?v=-Bdji72fbco&ab",
+            "url": "https://www.youtube.com/watch?v=-Bdji72fbco",
             "animate": "https://images2.imgbox.com/ce/81/D3Pz5i8t_o.gif",            
             "thumb": "https://img.youtube.com/vi/-Bdji72fbco/hqdefault.jpg"
           },
           {
             "title": "SILENT HILL PS1 #3 - O Final! Gameplay em Português PT-BR!",
-            "url": "https://www.youtube.com/watch?v=PRvM9GF3Hd0&ab_channel=BRKsEDU",
+            "url": "https://www.youtube.com/watch?v=PRvM9GF3Hd0",
             "animate": "https://images2.imgbox.com/c9/0f/VO1hlTOb_o.gif",            
             "thumb": "https://img.youtube.com/vi/PRvM9GF3Hd0/hqdefault.jpg"
           },
           {
+            "title": "O jogo MAIS AGUARDADO de 2023 é HOGWARTS LEGACY",
+            "url": "https://www.youtube.com/watch?v=kRwm5DMjc-c",
+            "animate": "https://images2.imgbox.com/23/77/da3kZKBE_o.gif",            
+            "thumb": "https://img.youtube.com/vi/kRwm5DMjc-c/hqdefault.jpg"
+          },
+          {
             "title": "ELE CHEGOU! - Pokémon GO (Parte 01)",
-            "url": "https://www.youtube.com/watch?v=0IuTHTn_Vig&ab",
+            "url": "https://www.youtube.com/watch?v=0IuTHTn_Vig",
             "animate": "https://images2.imgbox.com/30/8a/8pVnMNRm_o.gif",            
             "thumb": "https://img.youtube.com/vi/0IuTHTn_Vig/hqdefault.jpg"
           }
@@ -120,7 +126,13 @@
           "thumb": "https://img.youtube.com/vi/pDbcC-xSat4/hqdefault.jpg"
         }    
       ],
-      "Programação": [
+      "Programação": [        
+        {
+          "title": "Voltou o Papo Chato “ACABOU DEVS” (Minha Nova Opinião)",
+          "url": "https://www.youtube.com/watch?v=ILrRbyUxE38",
+          "animate": "https://images2.imgbox.com/17/d8/dEo2ozWp_o.gif",
+          "thumb": "https://img.youtube.com/vi/ILrRbyUxE38/hqdefault.jpg"
+        },
         {
           "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
           "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",

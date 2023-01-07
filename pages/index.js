@@ -10,7 +10,7 @@ function HomePage() {
 
     return (
         <>          
-            <div style={{
+            <div id="body" style={{
                 display: "flex",
                 flexDirection: "column",
                 flex: 1,
