@@ -23,6 +23,10 @@ const StyledFavorites = styled.div`
     a{
         font-size: 12px; 
         color: ${({ theme }) => theme.textColorBase || "#222222"};
+        transition: transform 350ms ease-in-out;
+        &:hover{
+            transform: scale(1.15);
+        };
     }
     section{
         display: flex;

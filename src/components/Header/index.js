@@ -7,6 +7,11 @@ const StyledHeader = styled.div`
         width: 80px;
         height: 80px;
         border-radius: 50%;
+        transition: transform 350ms ease-in-out;
+        &:hover{
+            transform: scale(1.10);
+            border: 2px solid green;
+        };
     }
     .user-info{
         display: flex;
