@@ -23,7 +23,8 @@ export function Timeline({searchValue, ...props}){
                                             event.preventDefault()
                                             function blur(value){
                                                 body.childNodes.forEach(element => {
-                                                    if(div.includes(element.className.slice(0,1))){                                                                     
+                                                    let letra = element.className.slice(0,1)
+                                                    if(letra !== "H" && letra !== "M" ){                                                                     
                                                         element.setAttribute("style", "filter: blur(" + value + "px)")
                                                     }
                                                 }); 
@@ -53,12 +54,9 @@ export function Timeline({searchValue, ...props}){
                                             videoFrame.setAttribute("style", "width: 620px; height: 340px;")                                    
                                             videoFrame.src = video.url.replace("/watch?v=","/embed/")                                                      
                                             bloco.appendChild(videoFrame)
-                                            body.appendChild(bloco)
 
-                                            const div = ["s", "F"]
-                                            body.childNodes.forEach(element => {
-                                                if(div.includes(element.className.slice(0,1))) blur(2)                                                                  
-                                            });                                                        
+                                            blur(2)                                                                                                            
+                                            body.appendChild(bloco)                                                        
                                         }
                                     } >
                                         <img src={video.thumb} 
