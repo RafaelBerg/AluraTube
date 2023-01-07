@@ -21,7 +21,6 @@ export function Timeline({searchValue, ...props}){
                                     <a key={video.url} className="video" href={video.url} onClick={
                                         (event) => {
                                             event.preventDefault()
-
                                             function blur(value){
                                                 body.childNodes.forEach(element => {
                                                     if(div.includes(element.className.slice(0,1))){                                                                     
@@ -30,7 +29,11 @@ export function Timeline({searchValue, ...props}){
                                                 }); 
                                             }
                                             const body = document.querySelector("#body")
-                                            const bloco = document.createElement("div")
+                                            if(body.lastChild.id === "bloco"){
+                                                return
+                                            }
+                                            const bloco = document.createElement("div")   
+                                            bloco.id = "bloco"                                                                                    
                                             bloco.setAttribute("style", "display:flex; flex-direction: column; position:fixed; align-self: center;margin-top: 200px")  
 
                                             // button
