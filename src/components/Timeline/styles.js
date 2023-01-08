@@ -5,6 +5,19 @@ export const StyledTimeline = styled.div`
   width: 100%;
   padding: 16px;
   overflow: hidden;
+  button{
+      border: 0px;
+      opacity: 0.8;
+      width: 26px;
+      height:113px;
+      position: absolute;
+      background: gray;
+      transition: 400ms ease-in-out;
+      &:hover{
+        background: rgb(154, 154, 154);
+        color: white;
+  }
+  }
   .video {
     transition: transform 350ms ease-in-out;
     &:hover{
@@ -36,7 +49,7 @@ export const StyledTimeline = styled.div`
       grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
       grid-auto-flow: column;
       grid-auto-columns: minmax(200px,1fr);
-      overflow-x: scroll;
+      overflow: hidden;
       scroll-snap-type: x mandatory;
       a {
         scroll-snap-align: start;
