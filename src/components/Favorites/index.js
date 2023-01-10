@@ -6,6 +6,7 @@ const StyledFavorites = styled.div`
         display:flex;
         padding: 10px;
         gap: 14px;
+        flex-wrap: wrap;
     }
     .icon {
         width: 90px;
@@ -45,19 +46,16 @@ export function Favorites(props){
         <StyledFavorites>
             <h2>AluraTubes Favoritos</h2>
                 <div className="conteudo">  
-                {favorites.map((favorite) => {
-                    const youtuber = props.favorites[favorite]
-                    return (
-                        <section key={favorite}>
-                            <a href={youtuber.url}><img className="icon" src={youtuber.icon} /></a> 
-                            <a href={youtuber.url}> {youtuber.name}</a>
-                        </section>   
-                    )
-                })}     
-            </div>
-            
-
-            
+                    {favorites.map((favorite) => {
+                        const youtuber = props.favorites[favorite]
+                        return (
+                            <section key={favorite}>
+                                <a href={youtuber.url}><img className="icon" src={youtuber.icon} /></a> 
+                                <a href={youtuber.url}> {youtuber.name}</a>
+                            </section>   
+                        )
+                    })}     
+                </div>       
         </StyledFavorites>
     )
 }
