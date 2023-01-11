@@ -18,13 +18,13 @@ export const VideoContext = React.createContext({
 
             const playlist = document.getElementById(playlistName).lastChild
             const html = document.createElement("a")
-            playlist.insertBefore(html, playlist.children[0])
+            playlist.append(html)
        
-            createRoot(playlist.firstChild).render(
+            createRoot(playlist.lastChild).render(
                 <Video video={videoWithThumb} setVideoVisible={setVideoVisible.setVideoVisible}/>
             )
 
-            playlist.scrollBy(-100,0)
+            playlist.scrollBy(10000,0)
             // default
             setFormVisible(false)
             video.url = ""
