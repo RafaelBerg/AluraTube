@@ -1,5 +1,5 @@
 import React from "react"
-import { VideoContext } from "../Timeline"
+import { VideoContext } from "../Timeline/Video"
 import { StyledRegisterVideo } from "./styles"
 
 function useForm(propsDoForm) {
@@ -18,10 +18,11 @@ function useForm(propsDoForm) {
     }
 }
 
-export default function RegisterVideo(){
+export default function RegisterVideo(setVideoVisible){
     const formCadastro = useForm({
-        initialValues: {titulo: "", url: ""}})
+        initialValues: {title: "", url: "", playlist: ""}})
     const [formVisible, setFormVisible] = React.useState(false)
+    const videoContext = React.useContext(VideoContext)
    
     return (
         <StyledRegisterVideo>
@@ -34,20 +35,32 @@ export default function RegisterVideo(){
                     <div>
                         <button className="close-modal" onClick={() => setFormVisible(false)}>
                             X
-                        </button>
+                        </button>                   
                         <input 
-                            placeholder="Titulo do video" 
-                            name="titulo"
-                            value={formCadastro.values.titulo} 
+                            placeholder="Title" 
+                            name="title"
+                            value={formCadastro.values.title} 
                             onChange={formCadastro.handleChange}
                             />
                         <input 
                             placeholder="URL"
                             name="url"
                             value={formCadastro.values.url} 
-                            onChange={formCadastro.handleChange}/>
-                        {/* console.log(formCadastro.values) */}
-                        <button type="submit">
+                            onChange={formCadastro.handleChange}/>                         
+                        <select>
+                            <option value={""} disabled>Playlists</option>
+                            <option value={"jogos"}>Jogos</option>
+                            <option value={"front-end"}>Front-End</option>
+                            <option value={"programação"}>Programação</option>
+                        </select>
+                        <button onClick={()=> 
+                            videoContext.addVideo(
+                                formCadastro.values,
+                                document.querySelector("select").value, 
+                                setFormVisible,
+                                setVideoVisible
+                                )} 
+                            type="submit">
                             Cadastrar
                         </button>
                     </div>

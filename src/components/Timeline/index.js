@@ -2,8 +2,7 @@ import React from "react";
 import { StyledTimeline } from "./styles"
 import Video from "./Video";
 
-
-export function Timeline({searchValue, videoVisible, setVideoVisible, ...props}){  
+export function Timeline({searchValue, setVideoVisible, ...props}){  
     const playlistNames = Object.keys(props.playlists)
     
     function scroll(value, event){
@@ -16,7 +15,7 @@ export function Timeline({searchValue, videoVisible, setVideoVisible, ...props})
             {playlistNames.map((playListName) => {
                 const videos = props.playlists[playListName]                
                 return (
-                    <section key={playListName}>
+                    <section id={playListName} key={playListName}>
                         <h2>{playListName}</h2>                  
                         <div> 
                             {searchValue === "" ? (
@@ -33,7 +32,6 @@ export function Timeline({searchValue, videoVisible, setVideoVisible, ...props})
                             }).map((video) => {                                
                                 return (
                                     <Video 
-                                        videoVisible={videoVisible} 
                                         setVideoVisible={setVideoVisible} 
                                         key={video.url} 
                                         video={video}/>

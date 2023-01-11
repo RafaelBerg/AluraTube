@@ -5,6 +5,7 @@ import { Header } from "../src/components/Header"
 import { Timeline } from "../src/components/Timeline"
 import { Favorites } from "../src/components/Favorites"
 import VideoPlayer from "../src/components/VideoPlayer"
+import RegisterVideo from "../src/components/RegisterVideo"
 
 function HomePage() {
     const [valorDoFiltro, setValorDoFiltro] = React.useState("");
@@ -21,7 +22,6 @@ function HomePage() {
                 <Header/>
                 <Timeline 
                     searchValue={valorDoFiltro} 
-                    videoVisible={videoVisible} 
                     setVideoVisible={setVideoVisible}  
                     playlists={config.playlists}>
                     conteudo
@@ -30,7 +30,7 @@ function HomePage() {
                 {videoVisible.state && (
                     <VideoPlayer videoVisible={videoVisible} setVideoVisible={setVideoVisible}/>
                 )}
-                
+                <RegisterVideo setVideoVisible={setVideoVisible}/>
             </div>
                 
         </>
